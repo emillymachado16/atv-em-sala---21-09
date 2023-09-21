@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+	char nome_completo[30];
+	int i = 0, a = 0;     
+	
+	printf ("Informe uma palavra: ");
+	scanf("%s", nome_completo);
+	
+	while (nome_completo[i] != '\0'){
+		if (nome_completo[i] == 'A'|| nome_completo[i] =='a'){
+			a++;
+	}
+	i++;	
+}
+	printf ("\nA letra a aparece na palavra: %d vezes", a);
+	
+	return 0;
+}
